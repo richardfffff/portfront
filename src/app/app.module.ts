@@ -21,8 +21,8 @@ import { BannerComponent } from './components/banner/banner.component';
 import { AcercaDmiComponent } from './components/acerca-dmi/acerca-dmi.component';
 import { EditeducacionComponent } from './components/educacion/editeducacion/editeducacion.component';
 import { NeweducacionComponent } from './components/educacion/neweducacion/neweducacion.component';
-import { EditexperienciaComponent } from './components/experiencia/editexperiencia/editexperiencia.component';
-import { NewexperienciaComponent } from './components/experiencia/newexperiencia/newexperiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/editexperiencia/editexperiencia.component';
+import { NewExperienciaComponent } from './components/experiencia/newexperiencia/newexperiencia.component';
 import { EditproyectoComponent } from './components/proyectos/editproyecto/editproyecto.component';
 import { NewproyectoComponent } from './components/proyectos/newproyecto/newproyecto.component';
 import { EditskillComponent } from './components/h-s/editskill/editskill.component';
@@ -31,33 +31,35 @@ import { NewskillComponent } from './components/h-s/newskill/newskill.component'
 @NgModule({
   declarations: [
     AppComponent,
-    ArgprogComponent,
     HeaderComponent,
-    EducacionComponent,
+    AcercaDmiComponent,
     ExperienciaComponent,
-    FooterComponent,
+    EducacionComponent,
+    BannerComponent,
+    SocialRedesComponent,
+    ArgprogComponent,
     HSComponent,
+    ProyectosComponent,
+    FooterComponent,
     HomeComponent,
     LoginComponent,
-    ProyectosComponent,
-    SocialRedesComponent,
-    BannerComponent,
-    AcercaDmiComponent,
-    EditeducacionComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent,
     NeweducacionComponent,
-    EditexperienciaComponent,
-    NewexperienciaComponent,
-    EditproyectoComponent,
+    EditeducacionComponent,
     NewproyectoComponent,
+    EditproyectoComponent,
+    NewskillComponent,
     EditskillComponent,
-    NewskillComponent
+
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [
     interceptorProvider
